@@ -1,0 +1,154 @@
+#read{
+	position: relative;
+	margin:0 auto;
+	max-width:980px;
+	width: 100%;
+}
+[fullscreen] #read{
+	background: white;
+	padding-left: 130px;
+	padding-right: 130px;
+	overflow:auto;
+}
+#read .pages{
+	margin-bottom: 30px;
+}
+#read .ctable td.center{
+	text-align: center;
+	font-size: 16px;
+}
+#read .ctable td.left{
+	text-align: left;
+}
+#read .ctable td.right{
+	text-align: end;
+}
+#read .ctable td.center > .aline{
+	width: 0%;
+    background: black;
+    height: 2px;
+    max-width: 195px;
+    display: inline-flex;
+	margin: 0;
+	transition: all .5s;
+}
+#read .ctable td.center[focus] > .aline, #read .ctable td.center[hover] > .aline{
+	width: 100%;
+}
+#read .ctable td>button{
+	cursor: pointer;
+}
+#read .ctable td>button>div{
+	display: flex;
+    align-items: center;
+}
+#read .ctable td>button>div>text{
+	font-size: 20px;
+	transform: scale(1.4);
+	transition:all .2s;
+}
+#read .ctable td>button.left>div>text{
+	margin-left: 8px;
+}
+#read .ctable td>button.right>div>text{
+	margin-right: 8px;
+}
+#read .ctable td>button>div>.icon{
+	font-size: 60px;
+	transform: scale(.6);
+	transition:all .2s;
+}
+#read .ctable td>button[hover]>div>.icon{
+	text-shadow: 0 0 8px rgb(231, 231, 231);
+	transform: scale(1);
+}
+#read .ctable td>button[hover]>div>text{
+	font-size: 20px;
+	transform: scale(1);
+}
+#read .curPageNum{
+	text-align: center;
+	font-weight: 700;
+    font-size: 18px;
+	background: none;
+}
+#read .allPagesCount{
+	font-size: inherit;
+}
+#read .title{
+	text-align: center;
+	margin-top:5px;
+}
+
+#read h1{
+	font-size:30px;
+	margin-bottom: 7px;
+}
+#read h2{
+	font-size:15px;
+	margin-bottom: 7px;
+}
+
+#read .cont{
+	margin-top: 20px;
+	text-align:justify;
+	font-size: 17px;
+	line-height: 24px;
+}
+#read .cont blockquote{
+	text-align:right;
+	margin-bottom:20px;
+}
+#read .cont p{
+	text-indent:30px;
+	font-size: inherit;
+}
+
+
+#read .resizeMenu{
+	width: 100%;
+	display: flex;
+	align-items: flex-end;
+}
+#read .resizeMenu>button{
+	cursor: pointer;
+	display: flex;
+	/* align-items: center; */
+}
+#read .resizeMenu>button.remove{
+	margin-left:40px;
+	margin-right:40px;
+}
+#read .resizeMenu>button.add text{
+	font-size:20px;
+}
+#read .resizeMenu>button.remove text{
+	font-size:15px;
+}
+
+#read .resizeMenu>button i{
+	font-size:41px;
+	transform: scale(.6);
+	transition:all .2s;
+}
+#read .resizeMenu>button text{
+	margin-left:-2px;
+	transform: scale(1.4);
+	align-self: flex-end;
+	margin-bottom:10px;
+	transition:all .2s;
+}
+
+#read .resizeMenu>button[hover] text{
+	transform: scale(1);
+}
+#read .resizeMenu>button[hover] i{
+	transform: scale(1);
+}
+
+#read[start] .ctable td>button.left{
+	display:none;
+}
+#read[end] .ctable td>button.right{
+	display:none;
+}

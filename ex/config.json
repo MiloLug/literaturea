@@ -1,0 +1,11 @@
+{
+	"defaultLanguage":"ru",
+	"defaultPage":"home",
+	"errorPage":"404",
+	"videosOnPage":30,
+	"videosOnSearch":20,
+	"notDisplayedExt":[
+		"php",
+		"json"
+	]
+}
